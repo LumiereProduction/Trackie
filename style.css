@@ -44,15 +44,19 @@ a:visited {
 .sidebar {
   flex-basis: 50rem;
   background-color: var(--color-dark--1);
-  padding: 3rem 5rem 4rem 5rem;
+  /* padding: 3rem 5rem 4rem 5rem; */
+  padding: 1.6rem 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
+  border-style: dotted;
+  border-color: #00c46a;
 }
 
 .logo {
   height: 5.2rem;
   align-self: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .workouts {
@@ -79,9 +83,11 @@ a:visited {
 }
 .workout--running {
   border-left: 5px solid var(--color-brand--2);
+  border-right: 5px solid var(--color-brand--2);
 }
 .workout--cycling {
   border-left: 5px solid var(--color-brand--1);
+  border-right: 5px solid var(--color-brand--1);
 }
 
 .workout__title {
@@ -116,6 +122,8 @@ a:visited {
 .form {
   background-color: var(--color-dark--2);
   border-radius: 5px;
+  border-style: dotted;
+  border-color: #ffb545;
   padding: 1.5rem 2.75rem;
   margin-bottom: 1.75rem;
 
@@ -153,7 +161,8 @@ a:visited {
 
 .form__input {
   width: 100%;
-  padding: 0.3rem 1.1rem;
+  /* padding: 0.3rem 1.1rem; */
+  padding: 0.3rem 0.7rem;
   font-family: inherit;
   font-size: 1.4rem;
   border: none;
@@ -214,7 +223,17 @@ a:visited {
 
 .running-popup .leaflet-popup-content-wrapper {
   border-left: 5px solid var(--color-brand--2);
+  border-top: 5px solid var(--color-brand--2);
 }
 .cycling-popup .leaflet-popup-content-wrapper {
   border-left: 5px solid var(--color-brand--1);
+  border-top: 5px solid var(--color-brand--1);
+}
+
+.reset-btn {
+  padding: 1.5px;
+  margin: 5px;
+  width: 45px;
+  border-radius: 10px;
+  margin-left: 40rem;
 }
